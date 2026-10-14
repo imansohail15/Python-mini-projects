@@ -1,0 +1,8 @@
+name=input("Enter your name: ")
+marks=int(input("Enter your marks: "))
+f=open("std_manager","a")
+f.write(f"{name} {marks} \n")
+f=open("std_manager","r")
+data=f.read()
+print(data)
+f.close()
